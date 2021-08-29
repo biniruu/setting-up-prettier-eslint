@@ -2,7 +2,6 @@ module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
   plugins: ['stylelint-scss', 'stylelint-order'],
   syntax: 'scss',
-  // ignoreFiles: ['./src/style.css'],
   rules: {
     'at-rule-empty-line-before': [
       'always',
@@ -55,8 +54,6 @@ module.exports = {
       true,
       {
         ignore: ['custom-elements', 'default-namespace'],
-        // ignoreNamespaces: ["/regex/", /regex/, "string"],
-        // ignoreTypes: ["/regex/", /regex/, "string"],
       },
     ],
     'max-empty-lines': [
