@@ -1,4 +1,4 @@
-# eslint-prettier boilerplate for jest
+# eslint-prettier boilerplate for Jest
 
 Jest 프로젝트를 위한 eslint-prettier 설정.
 
