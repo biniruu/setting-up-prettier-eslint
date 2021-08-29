@@ -13,7 +13,7 @@ Jest 프로젝트를 위한 eslint-prettier 설정.
    1. eslint // 코드의 문법을 검사하는 린팅과 코드의 스타일을 잡아주는 포맷팅 기능
    1. eslint-config-prettier // prettier와 충돌을 일으키는 ESLint 규칙들을 비활성화 시키는 config
    1. eslint-loader
-   1. eslint-plugin-import // ES2015+의 import/export 구문을 지원
+   1. eslint-plugin-import // ES2015+의 import/export 구문을 지원. Vue나 React 같은 프론트엔드 라이브러리를 사용할 때는 설치하지 않아도 괜찮다.
    1. eslint-plugin-prettier // Prettier에서 인식하는 코드상의 포맷 오류를 ESLint 오류로 출
    1. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
    1. eslint-plugin-jest
