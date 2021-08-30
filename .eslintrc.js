@@ -40,7 +40,7 @@ module.exports = {
     'generator-star-spacing': 'off', // allow async-await
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
-    'jest/no-hooks': ['error', { allow: ['afterEach', 'afterAll'] }],
+    'jest/no-hooks': ['error', { allow: ['afterEach', 'afterAll', 'beforeEach', 'beforeAll'] }],
     'jest/no-identical-title': 'error',
     'jest/prefer-expect-assertions': ['warn', { onlyFunctionsWithAsyncKeyword: true }],
     'jest/prefer-to-have-length': 'warn',
