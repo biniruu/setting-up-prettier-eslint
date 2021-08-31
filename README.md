@@ -45,7 +45,8 @@ mocha test 프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
    ```json
    {
      "scripts": {
-       "lint": "eslint ."
+       "lint": "eslint .",
+       "test": "mocha"
      }
    }
    ```
@@ -59,9 +60,10 @@ mocha test 프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
 1. npm 설치
 
    1. eslint-plugin-mocha
+   1. mocha
 
    ```bash
-   $ yarn add -D eslint-plugin-mocha
+   $ yarn add -D eslint-plugin-mocha mocha
    ```
 
 1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
