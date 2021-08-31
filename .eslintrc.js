@@ -25,7 +25,6 @@ module.exports = {
     'comma-dangle': 'off',
     'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
     'generator-star-spacing': 'off', // allow async-await
-    // eslint-plugin-mocha rules: https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules
     'mocha/handle-done-callback': 'error',
     'mocha/max-top-level-suites': 'error',
     'mocha/no-async-describe': 'error',
