@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    // 'jest/globals': true,
+    jest: true,
     node: true,
   },
   extends: [
@@ -23,20 +23,9 @@ module.exports = {
   root: true,
   rules: {
     'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입. always로 설정할 경우 prettier와 충돌 발생
-    camelcase: [
-      'error',
-      {
-        properties: 'never',
-      },
-    ],
+    camelcase: ['error', { properties: 'never' }],
     'comma-dangle': 'off',
-    'computed-property-spacing': [
-      'error',
-      'never',
-      {
-        enforceForClassMembers: false,
-      },
-    ], // class 안에서 정의한 멤버의 대괄호 안에 간격 삽입
+    'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
     'generator-star-spacing': 'off', // allow async-await
     'jest/no-disabled-tests': 'warn',
     'jest/no-focused-tests': 'error',
@@ -58,22 +47,8 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
-    'prettier/prettier': [
-      'warn',
-      {
-        bracketSpacing: true,
-        printWidth: 120,
-        singleQuote: true,
-        trailingComma: 'all',
-      },
-    ],
-    quotes: [
-      'warn',
-      'single',
-      {
-        allowTemplateLiterals: true,
-      },
-    ],
+    'prettier/prettier': ['warn', { bracketSpacing: true, printWidth: 120, singleQuote: true, trailingComma: 'all' }],
+    quotes: ['warn', 'single', { allowTemplateLiterals: true }],
     'space-before-function-paren': 'off', // allow debugger during development
   },
 }
