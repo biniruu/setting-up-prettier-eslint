@@ -41,28 +41,39 @@ Jest test 프로젝트를 위한 eslint-prettier 설정.
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
-> 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
+   > 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
 
-```json
-{
-  "scripts": {
-    "lint": "eslint ."
-  }
-}
-```
+   ```json
+   {
+     "scripts": {
+       "lint": "eslint ."
+     }
+   }
+   ```
 
-```bash
-$ npm run lint
-```
+   ```bash
+   $ npm run lint
+   ```
 
 ## jest를 사용할 때 추가 설정
 
 1. npm 설치
 
    1. eslint-plugin-jest
+   1. jest
 
    ```bash
-   $ yarn add -D eslint-plugin-jest
+   $ yarn add -D eslint-plugin-jest jest
+   ```
+
+1. package.json > scripts 에 test 명령어 추가 후 실행
+
+   ```json
+   {
+     "scripts": {
+       "test": "jest"
+     }
+   }
    ```
 
 1. .eslintrc.js에서 주석 처리한 jest 관련 옵션 활성화
