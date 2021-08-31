@@ -1,6 +1,6 @@
 # eslint-prettier boilerplate for mocha
 
-프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
+mocha test 프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
 
 ## vs code에 prettier & eslint 설정하기
 
