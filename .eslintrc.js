@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'eslint-config-prettier',
+    'eslint-config-sinon',
     'plugin:chai-friendly/recommended',
     'plugin:mocha/recommended',
     'eslint:recommended',

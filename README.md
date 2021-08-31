@@ -59,12 +59,14 @@ mocha test 프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
 1. npm 설치
 
    1. chai
+   1. eslint-config-sinon
    1. eslint-plugin-chai-friendly
    1. eslint-plugin-mocha
    1. mocha
+   1. sinon
 
    ```bash
-   $ yarn add -D chai eslint-plugin-chai-friendly eslint-plugin-mocha mocha
+   $ yarn add -D chai eslint-config-sinon eslint-plugin-chai-friendly eslint-plugin-mocha mocha sinon
    ```
 
 1. package.json > scripts 에 test 명령어 추가 후 실행
