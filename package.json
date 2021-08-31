@@ -1,22 +1,22 @@
 {
-  "name": "eslint-prettier-stylelint-boilerplate",
-  "version": "1.0.0",
-  "description": "> *프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.*",
+  "name": "eslint-prettier-stylelint-boilerplate-for-jest",
+  "version": "1.0.1",
+  "description": "> *jest test 프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.*",
   "main": ".eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/biniruu/setting-up-prettier-eslint.git"
+    "url": "git+https://github.com/biniruu/eslint-prettier-stylelint-boilerplate.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "biniruu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/biniruu/setting-up-prettier-eslint/issues"
+    "url": "https://github.com/biniruu/eslint-prettier-stylelint-boilerplate/issues"
   },
-  "homepage": "https://github.com/biniruu/setting-up-prettier-eslint#readme",
+  "homepage": "https://github.com/biniruu/eslint-prettier-stylelint-boilerplate#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.24.0",
