@@ -1,14 +1,6 @@
-# eslint-prettier-stylelint boilerplate
+# eslint-prettier boilerplate for mocha
 
-프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.
-
-다음 라이브러리 & 프레임워크를 사용하는 프로젝트에 바로 적용할 수 있다.
-
-- Jest
-- React.js
-- Typescript
-- Vanillascript
-- Vue.js
+프로젝트에 바로 사용할 수 있는 eslint-prettier 설정.
 
 ## vs code에 prettier & eslint 설정하기
 
@@ -26,7 +18,7 @@
    7. prettier // 코드의 스타일을 잡아주는 포맷팅 기능
 
    ```bash
-   $ yarn add -D babel-eslint eslint eslint-loader eslint-config-prettier eslint-plugin-import eslint-plugin-prettier prettier
+   $ yarn add -D babel-eslint eslint eslint-config-prettier eslint-loader eslint-plugin-import eslint-plugin-prettier prettier
    ```
 
 1. 프로젝트 root 폴더에 파일 복사
@@ -48,107 +40,30 @@
 
 1. package.json > scripts 에 lint 명령어 추가 후 실행
 
-> 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
+   > 명령어를 추가하지 않고 `npx eslint .`만 실행해도 된다.
 
-```json
-{
-  "scripts": {
-    "lint": "eslint ."
-  }
-}
-```
-
-```bash
-$ npm run lint
-```
-
-## stylelint 설정하기
-
-1. stylelint extention 설치
-1. npm 설치
-
-   1. stylelint
-   2. stylelint-config-standard
-   3. stylelint-config-prettier
-   4. stylelint-order
-   5. stylelint-scss
-
-   ```bash
-   $ yarn add -D stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
+   ```json
+   {
+     "scripts": {
+       "lint": "eslint ."
+     }
+   }
    ```
 
-1. 프로젝트 root 폴더에 파일 복사
-   1. .stylelintrc.js
+   ```bash
+   $ npm run lint
+   ```
 
-## Vue.js 프로젝트일 때 추가 설정
+## mocha를 사용할 때 추가 설정
 
 1. npm 설치
 
-   1. eslint-plugin-vue
+   1. eslint-plugin-mocha
 
    ```bash
-   $ yarn add -D eslint-plugin-vue
+   $ yarn add -D eslint-plugin-mocha
    ```
 
-1. .eslintrc.js에서 주석 처리한 vue 관련 옵션 활성화
+1. .eslintrc.js에서 주석 처리한 mocha 관련 옵션 활성화
 
----
-
-## Typescript 프로젝트일 때 추가 설정
-
-1. npm 설치
-
-   1. typescript
-   2. @typescript-eslint/eslint-plugin // Typescript 관련 린팅 규칙을 설정하는 플러그인
-   3. @typescript-eslint/parser // Typescript 를 파싱하기 위해 사용
-
-   ```bash
-   $ yarn add -D typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser
-   ```
-
-1. .eslintrc.js에서 주석 처리한 typescript 관련 옵션 활성화
-1. .prettierrc에 `"parser": "typescript"` 추가
-
----
-
-## React.js 프로젝트일 때 추가 설정
-
-1. npm 설치
-
-   1. eslint-plugin-react
-   2. eslint-plugin-react-hooks
-   3. eslint-plugin-jsx-a11y
-
-   ```bash
-   $ yarn add -D eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
-   ```
-
-1. .eslintrc.js에서 주석 처리한 react 관련 옵션 활성화
-
----
-
-## jest를 사용할 때 추가 설정
-
-1. npm 설치
-
-   1. eslint-plugin-jest
-
-   ```bash
-   $ yarn add -D eslint-plugin-jest
-   ```
-
-1. .eslintrc.js에서 주석 처리한 jest 관련 옵션 활성화
-
-   - [Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-rules)
-   - [Typescript Rules](https://www.npmjs.com/package/eslint-plugin-jest#user-content-typescript-rules)
-
----
-
-## 린트 기본 설정
-
-> 아래 패키지는 프론트엔드 vue.js, react.js, typescript를 제외한 것.
-
-```bash
-npm init -y
-yarn add -D babel-eslint eslint eslint-loader eslint-plugin-import eslint-config-prettier eslint-plugin-prettier prettier stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
-```
+   [Rules](https://github.com/lo1tuma/eslint-plugin-mocha/tree/f9540209dc153c26fb44fa5250af6034058db875/docs/rules#rules)
