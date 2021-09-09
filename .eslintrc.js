@@ -1,28 +1,26 @@
 module.exports = {
   env: { browser: true, es6: true, node: true },
   extends: [
-    'eslint-config-prettier',
     'eslint:recommended',
+    'eslint-config-prettier',
+    'plugin:import/recommended',
     'plugin:jest/recommended',
     'plugin:nuxt/recommended',
-    'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
+    'plugin:prettier/recommended',
     'plugin:vue/strongly-recommended',
   ],
-  globals: {
-    $nuxt: true,
-  },
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module', // 모듈 시스템 사용 시
-  },
+  globals: { $nuxt: true },
+  parser: 'vue-eslint-parser',
+  parserOptions: { parser: 'babel-eslint', ecmaVersion: 6, sourceType: 'module' },
+  plugins: ['import', 'jest', 'nuxt', 'prettier', 'vue'],
   root: true,
   rules: {
-    'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입. always로 설정할 경우 prettier와 충돌 발생
+    'array-bracket-spacing': ['warn', 'never'],
     camelcase: ['error', { properties: 'never' }],
     'comma-dangle': 'off',
     'computed-property-spacing': ['error', 'never', { enforceForClassMembers: false }],
-    'generator-star-spacing': 'off', // allow async-await
+    'generator-star-spacing': 'off',
+    'import/no-unresolved': 'off',
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
@@ -33,14 +31,19 @@ module.exports = {
     'no-new-object': 'error',
     'no-unused-vars': 'warn',
     'no-var': 'error',
-    'object-curly-spacing': ['warn', 'always'], // 중괄호 안에 간격 삽입
+    'object-curly-spacing': ['warn', 'always'],
     'prefer-const': 'error',
     'prefer-rest-params': 'error',
     'prettier/prettier': ['warn', { bracketSpacing: true, printWidth: 120, singleQuote: true, trailingComma: 'all' }],
     quotes: ['warn', 'single', { allowTemplateLiterals: true }],
-    'space-before-function-paren': 'off', // allow debugger during development
-    'vue/v-bind-style': ['warn', 'shorthand'],
-    'vue/require-v-for-key': 'warn',
+    'space-before-function-paren': 'off',
+    'vue/html-self-closing': [
+      'warn',
+      { html: { void: 'always', normal: 'never', component: 'always' }, svg: 'always', math: 'always' },
+    ],
+    'vue/max-attributes-per-line': ['error', { singleline: { max: 10 }, multiline: { max: 1, allowFirstLine: false } }],
     'vue/no-unused-components': 'warn',
+    'vue/require-v-for-key': 'warn',
+    'vue/v-bind-style': ['warn', 'shorthand'],
   },
 }

@@ -74,6 +74,8 @@
 
 ## Nuxt.js 프로젝트일 때 추가 설정
 
+> `create-nuxt-app` 으로 앱을 설치했을 때 기본으로 설치되는 패키지는 제외하였음.
+
 1. npm 설치
 
    1. eslint-plugin-vue
