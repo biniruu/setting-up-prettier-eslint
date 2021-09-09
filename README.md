@@ -59,13 +59,13 @@
 1. npm 설치
 
    1. stylelint
-   2. stylelint-config-standard
-   3. stylelint-config-prettier
+   2. stylelint-config-prettier
+   3. stylelint-config-standard
    4. stylelint-order
    5. stylelint-scss
 
    ```bash
-   $ yarn add -D stylelint stylelint-config-standard stylelint-config-prettier stylelint-order stylelint-scss
+   $ yarn add -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
    ```
 
 1. 프로젝트 root 폴더에 파일 복사

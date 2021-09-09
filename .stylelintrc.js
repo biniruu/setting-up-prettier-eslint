@@ -4,12 +4,7 @@ module.exports = {
   syntax: 'scss',
   // ignoreFiles: ['./src/style.css'],
   rules: {
-    'at-rule-empty-line-before': [
-      'always',
-      {
-        except: ['first-nested'],
-      },
-    ],
+    'at-rule-empty-line-before': ['always', { except: ['first-nested'] }],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
     'at-rule-semicolon-newline-after': 'always',
@@ -19,30 +14,16 @@ module.exports = {
     'block-opening-brace-newline-after': ['always'],
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
-    'comment-empty-line-before': [
-      'always',
-      {
-        except: ['first-nested'],
-      },
-    ],
+    'comment-empty-line-before': ['always', { except: ['first-nested'] }],
     'comment-whitespace-inside': 'always',
-    'custom-property-empty-line-before': [
-      'always',
-      {
-        except: ['after-custom-property', 'first-nested'],
-      },
-    ],
+    'custom-property-empty-line-before': ['always', { except: ['after-custom-property', 'first-nested'] }],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    'declaration-block-trailing-semicolon': null /* This rule is recommanded because of conflict by semicolon rule between prettier and stylelint */,
+    // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
+    'declaration-block-trailing-semicolon': null,
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
-    'declaration-empty-line-before': [
-      'always',
-      {
-        except: ['after-declaration', 'first-nested'],
-      },
-    ],
+    'declaration-empty-line-before': ['always', { except: ['after-declaration', 'first-nested'] }],
     'font-family-name-quotes': 'always-where-recommended',
     'function-comma-space-after': 'always',
     'function-max-empty-lines': 0,
@@ -59,36 +40,21 @@ module.exports = {
         // ignoreTypes: ["/regex/", /regex/, "string"],
       },
     ],
-    'max-empty-lines': [
-      1,
-      {
-        ignore: ['comments'],
-      },
-    ],
+    'max-empty-lines': [1, { ignore: ['comments'] }],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
     'media-feature-name-case': 'lower',
     'media-feature-parentheses-space-inside': 'never',
     'media-query-list-comma-newline-after': 'never-multi-line',
     'media-query-list-comma-newline-before': 'never-multi-line',
-    'no-descending-specificity': [
-      true,
-      {
-        ignore: ['selectors-within-list'],
-      },
-    ], // 이 옵션을 비활성할 수 있는 방법이 없음
+    'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }], // 이 옵션을 비활성할 수 있는 방법이 없음
     'no-extra-semicolons': true,
     'number-leading-zero': 'always',
     'number-max-precision': 4,
     'number-no-trailing-zeros': true,
     'order/properties-alphabetical-order': true,
     'property-case': 'lower',
-    'rule-empty-line-before': [
-      'always-multi-line',
-      {
-        except: ['after-single-line-comment', 'first-nested'],
-      },
-    ],
+    'rule-empty-line-before': ['always-multi-line', { except: ['after-single-line-comment', 'first-nested'] }],
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
