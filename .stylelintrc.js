@@ -4,9 +4,17 @@ module.exports = {
   syntax: 'scss',
   // ignoreFiles: ['./src/style.css'],
   rules: {
-    'at-rule-empty-line-before': ['always', { except: ['first-nested'] }],
+    'at-rule-empty-line-before': [
+      'always',
+      {
+        except: ['first-nested', 'blockless-after-same-name-blockless'],
+        ignore: ['after-comment', 'first-nested'],
+        ignoreAtRules: ['else'],
+      },
+    ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
+    'at-rule-no-unknown': null,
     'at-rule-semicolon-newline-after': 'always',
     'at-rule-semicolon-space-before': 'never',
     'block-closing-brace-empty-line-before': 'never',
@@ -50,7 +58,7 @@ module.exports = {
     'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }], // 이 옵션을 비활성할 수 있는 방법이 없음
     'no-extra-semicolons': true,
     'number-leading-zero': 'always',
-    'number-max-precision': 4,
+    'number-max-precision': 10,
     'number-no-trailing-zeros': true,
     'order/properties-alphabetical-order': true,
     'property-case': 'lower',
