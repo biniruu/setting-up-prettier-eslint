@@ -1,15 +1,12 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-  },
+  env: { browser: true, es6: true, node: true },
   extends: [
     'eslint-config-prettier',
     'eslint-config-sinon',
-    'plugin:chai-friendly/recommended',
-    'plugin:mocha/recommended',
     'eslint:recommended',
+    'plugin:chai-friendly/recommended',
+    'plugin:import/recommended',
+    'plugin:mocha/recommended',
     'plugin:prettier/recommended', // eslint의 포매팅 기능을 prettier로 사용. 항상 마지막에 세팅 되어야? (eslint-plugin-prettier)
   ],
   parser: 'babel-eslint',
@@ -17,6 +14,7 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module', // 모듈 시스템 사용 시
   },
+  plugins: ['chai-friendly', 'import', 'mocha', 'prettier'],
   root: true,
   rules: {
     'array-bracket-spacing': ['warn', 'never'], // 대괄호 안에 간격 삽입. always로 설정할 경우 prettier와 충돌 발생
