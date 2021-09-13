@@ -40,14 +40,7 @@ module.exports = {
     'function-parentheses-space-inside': 'never',
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
-    'selector-type-no-unknown': [
-      true,
-      {
-        ignore: ['custom-elements', 'default-namespace'],
-        // ignoreNamespaces: ["/regex/", /regex/, "string"],
-        // ignoreTypes: ["/regex/", /regex/, "string"],
-      },
-    ],
+    'selector-type-no-unknown': [true, { ignore: ['custom-elements', 'default-namespace'] }],
     'max-empty-lines': [1, { ignore: ['comments'] }],
     'media-feature-colon-space-after': 'always',
     'media-feature-colon-space-before': 'never',
