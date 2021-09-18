@@ -25,7 +25,7 @@ module.exports = {
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-console': 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-duplicate-imports': 'error',
     'no-extra-semi': 'error',
     'no-inner-declarations': 'off',
