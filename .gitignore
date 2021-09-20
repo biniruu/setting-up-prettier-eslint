@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,git,visualstudiocode,yarn,node,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,git,visualstudiocode,yarn,node,react
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -165,22 +165,12 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-### Nuxtjs ###
-# dependencies
-node_modules
-
-# logs
-npm-debug.log
-
-# Nuxt build
-
-# Nuxt generate
-
 ### react ###
 .DS_*
 **/*.backup.*
 **/*.back.*
 
+node_modules
 
 *.sublime*
 
@@ -203,12 +193,6 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
-
-### Vuejs ###
-# Recommended template: Node.gitignore
-
-dist/
-yarn-error.log
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -252,4 +236,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,yarn,git,node,react,vuejs,nuxtjs
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,git,visualstudiocode,yarn,node,react

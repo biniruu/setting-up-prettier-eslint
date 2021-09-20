@@ -14,7 +14,7 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
-    'at-rule-no-unknown': null, // stylelint-scss 를 설치했을 경우 활성화 권장
+    // 'at-rule-no-unknown': [true, {ignoreAtRules: ['string']}],
     'at-rule-semicolon-newline-after': 'always',
     'at-rule-semicolon-space-before': 'never',
     'block-closing-brace-empty-line-before': 'never',
@@ -27,7 +27,6 @@ module.exports = {
     'custom-property-empty-line-before': ['always', { except: ['after-custom-property', 'first-nested'] }],
     'declaration-bang-space-after': 'never',
     'declaration-bang-space-before': 'always',
-    // This rule is recommanded because of conflict by semicolon rule between prettier and stylelint
     'declaration-block-trailing-semicolon': null,
     'declaration-colon-space-after': 'always',
     'declaration-colon-space-before': 'never',
@@ -55,7 +54,7 @@ module.exports = {
     'media-feature-parentheses-space-inside': 'never',
     'media-query-list-comma-newline-after': 'never-multi-line',
     'media-query-list-comma-newline-before': 'never-multi-line',
-    'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }], // 이 옵션을 비활성할 수 있는 방법이 없음
+    'no-descending-specificity': [true, { ignore: ['selectors-within-list'] }],
     'no-extra-semicolons': true,
     'number-leading-zero': 'always',
     'number-max-precision': 10,
@@ -66,7 +65,7 @@ module.exports = {
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
-    'selector-attribute-quotes': 'always', // 'never'로 하면 "Unclosed string (CssSyntaxError)" 에러 발생. 아마도 eslint의 rule과 충돌하는 듯.
+    'selector-attribute-quotes': 'always',
     'selector-combinator-space-after': 'always',
     'selector-combinator-space-before': 'always',
     'selector-descendant-combinator-no-non-space': true,
