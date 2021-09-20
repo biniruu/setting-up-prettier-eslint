@@ -1,6 +1,6 @@
-# eslint-prettier-stylelint boilerplate
+# boilerplates-for-linters
 
-프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint 설정.
+프로젝트에 바로 사용할 수 있는 eslint-prettier-stylelint-markdownlint 설정.
 
 다음 라이브러리 & 프레임워크를 사용하는 프로젝트에 바로 적용할 수 있다.
 
@@ -81,6 +81,21 @@
 1. 프로젝트 root 폴더에 파일 복사
 
    1. .stylelintrc.js
+
+## markdownlint 설정하기
+
+1. markdownlint extention 설치
+1. npm 설치
+
+   1. markdownlint
+
+   ```bash
+   $ yarn add -D markdownlint
+   ```
+
+1. 프로젝트 root 폴더에 파일 복사
+
+   1. .markdownlint.json
 
 ## Vue.js 프로젝트일 때 추가 설정
 
